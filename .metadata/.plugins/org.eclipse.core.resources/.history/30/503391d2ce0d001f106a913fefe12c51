@@ -1,0 +1,15 @@
+package kk;
+
+public class Hello {
+	public void i() {
+		System.out.println("ㅎ");
+	}
+	public static void main(String[] args) {
+		short a = 10000;
+		short b = 20000;
+		short c = a*b;
+		
+		System.out.println(c);
+	}
+
+}

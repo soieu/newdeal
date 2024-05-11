@@ -1,0 +1,23 @@
+package test.date;
+
+public class testDate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int year = 1998;
+		int month = 7;
+		int day = 9;
+		
+		System.out.println(year +" "+ month +" "+ day);
+		Date myBirth = new Date();
+		myBirth.year = 1998;
+		myBirth.month = 7;
+		myBirth.day = 9;
+		System.out.println(myBirth);
+		
+		myBirth.day = 140;
+		System.out.println(myBirth);
+
+	}
+
+}

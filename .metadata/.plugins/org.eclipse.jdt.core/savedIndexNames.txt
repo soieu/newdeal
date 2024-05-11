@@ -1,0 +1,7 @@
+INDEX VERSION 1.132+/Users/soyoung/Desktop/study/java/newdeal/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+31624655.index
+3777737754.index
+2310222179.index
+2419708531.index
+2122092220.index

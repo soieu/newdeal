@@ -1,0 +1,15 @@
+package kk;
+
+public class Hello {
+	public void i() {
+		System.out.println("ㅎ");
+	}
+	public static void main(String[] args) {
+		char a = 'a';
+		char b = 'c';
+		char c = (char) (a+b);
+		
+		System.out.println(c);
+	}
+
+}
