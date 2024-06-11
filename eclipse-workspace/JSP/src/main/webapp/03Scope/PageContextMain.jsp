@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ page import="common.Person" %>
 <%
 pageContext.setAttribute("pageInteger", 1000);
-pageContext.setAttribute("pageString", "ÆäÀÌÁö ¿µ¿ªÀÇ ¹®ÀÚ¿­");
-pageContext.setAttribute("pagePerson", new Person("ÇÑ¼®ºÀ", 99));
+pageContext.setAttribute("pageString", "í˜ì´ì§€ ì˜ì—­ì˜ ë¬¸ìì—´");
+pageContext.setAttribute("pagePerson", new Person("í•œì„ë´‰", 99));
 %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>page¿µ¿ªÀÇ ¼Ó¼º°ª ÀĞ±â</h2>
+	<h2>pageì˜ì—­ì˜ ì†ì„±ê°’ ì½ê¸°</h2>
 	<%
 	int pInteger = (Integer)(pageContext.getAttribute("pageInteger"));
 	String pString = (String)(pageContext.getAttribute("pageString"));
@@ -26,11 +26,11 @@ pageContext.setAttribute("pagePerson", new Person("ÇÑ¼®ºÀ", 99));
 		<li>person : <%=pPerson.getName()%>, <%=pPerson.getAge()%></li>
 	</ul>	
 	
-	<h2>includeµÈ ÆÄÀÏ¿¡¼­ page ¿µ¿ª ÀĞ¾î¿À±â</h2>
+	<h2>includeëœ íŒŒì¼ì—ì„œ page ì˜ì—­ ì½ì–´ì˜¤ê¸°</h2>
 	<%@ include file="PageInclude.jsp" %>
 	
-	<h2>ÆäÀÌÁö ÀÌµ¿ ÈÄ page ¿µ¿ª ÀĞ¾î¿À±â</h2>
-	<a href="pageLocation.jsp">PageLocation.jsp ¹Ù·Î°¡±â</a>
+	<h2>í˜ì´ì§€ ì´ë™ í›„ page ì˜ì—­ ì½ì–´ì˜¤ê¸°</h2>
+	<a href="pageLocation.jsp">PageLocation.jsp ë°”ë¡œê°€ê¸°</a>
 
 </body>
 </html>

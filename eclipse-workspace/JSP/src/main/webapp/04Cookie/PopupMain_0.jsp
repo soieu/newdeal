@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%
 String popupMode = "on";
 
@@ -8,7 +8,7 @@ if(cookies != null) {
 	for(Cookie c : cookies) {
 		String cookieName = c.getName();
 		String cookieValue = c.getValue();
-		if(cookieName.equals("popupClose")) {
+		if(cookieName.equals("PopupClose")) {
 			popupMode = cookieValue;
 		}
 	}
@@ -17,44 +17,51 @@ if(cookies != null) {
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 <style>
 	div#popup {
-	position: absolute; top:100px; left:50ps; color:yello; width:270px; height:100px; background-color:gray;}
+		position: absolute; top:100px; left:50px; color:yellow; width:270px; height:100px; background-color:gray;
+	}
 	div#popup>div {
 		position: relative; background-color:#ffffff; top:0px; border:1px solid gray; padding:10px; color:black;
-		}
-	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(function() {
-			$('#closeBtn').click(function() {
-				$('#popup').hide();
-				var chkVal = $("input:checkbox[id=inactiveToday:checked]".val();)
-			})
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function() {
+		$('#closeBtn').click(function() {
+			$('#popup').hide();
+			
+			var chkVal = $("input:checkbox[id=inactiveToday]:checked").val() ? "off" : "on";
+			$.ajax({ // ë¹„ë™ê¸° ìš”ì²­ 
+				url: './PopupCookie.jsp',
+				type: 'get',
+				data: {inactiveToday : chkVal},
+				dataType : "text",
+				success : function(resData) {
+					if(resData != '') location.reload();
+				}
+			});
 		});
-	</script>
+	});
+</script>
 </head>
 <body>
-	<%
-		
-	%>
-	<h2>ÆË¾÷ ¸ŞÀÎ ÆäÀÌÁö(ver 0.1)</h2>
+	<h2>íŒì—… ë©”ì¸ í˜ì´ì§€(ver 0.1)</h2>
 	<%
 		for(int i = 1; i <= 10; i++) {
-			out.print("ÇöÀç ÆË¾÷Ã¢Àº "+ popupMode + " »óÅÂÀÔ´Ï´Ù.<br/>");
+			out.print("í˜„ì¬ íŒì—…ì°½ì€ "+ popupMode + " ìƒíƒœì…ë‹ˆë‹¤.<br/>");
 		}
 	if(popupMode.equals("on")) {
-		
 	%>
 	<div id="popup">
-		<h2 align="center">°øÁö»çÇ× ÆË¾÷ÀÔ´Ï´Ù.</h2>
+		<h2 align="center">ê³µì§€ì‚¬í•­ íŒì—…ì…ë‹ˆë‹¤.</h2>
 		<div align="right">
 			<form name="popFrm">
 				<input type="checkbox" id="inactiveToday" value="1" />
-				ÇÏ·çµ¿¾È ¿­Áö ¾ÊÀ½
-				<input type="button" value="´İ±â" id="closeBtn" />
+				í•˜ë£¨ë™ì•ˆ ì—´ì§€ ì•ŠìŒ
+				<input type="button" value="ë‹«ê¸°" id="closeBtn" />
 			</form>
 		</div>
 	</div>

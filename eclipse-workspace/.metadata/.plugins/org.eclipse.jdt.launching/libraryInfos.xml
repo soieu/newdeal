@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home" version="21.0.2"/>
+    <libraryInfo home="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home" version="1.8.0_412">
+        <bootpath>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/resources.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/rt.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/sunrsasign.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/jsse.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/jce.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/charsets.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/jfr.jar"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/Users/soyoung/Library/Java/Extensions"/>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/ext"/>
+            <entry path="/Library/Java/Extensions"/>
+            <entry path="/Network/Library/Java/Extensions"/>
+            <entry path="/System/Library/Java/Extensions"/>
+            <entry path="/usr/lib/java"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="/Users/soyoung/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home" version="19.0.2"/>
     <libraryInfo home="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre" version="17.0.11"/>
     <libraryInfo home="C:\Program Files\Java\jdk1.8.0_202" version="1.8.0_202">
         <bootpath>
@@ -20,5 +45,6 @@
             <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
         </endorsedDirs>
     </libraryInfo>
+    <libraryInfo home="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home" version="17.0.9"/>
     <libraryInfo home="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830" version="17.0.11"/>
 </libraryInfos>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+    <entry loc="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home" stamp="1705467970000"/>
+    <entry loc="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-1.8.0_412/Contents/Home" stamp="1715603955482"/>
+    <entry loc="/Users/soyoung/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home" stamp="1675423938365"/>
     <entry loc="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre" stamp="1717995261515"/>
     <entry loc="C:\Program Files\Java\jdk1.8.0_202" stamp="1717996656556"/>
+    <entry loc="/Users/soyoung/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home" stamp="1705143901088"/>
     <entry loc="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830" stamp="1717995261515"/>
 </dirs>
